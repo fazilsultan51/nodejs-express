@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://fh_18980:GTzEMfql4lXQT27k@cluster0.shipz.mongodb.net/?retryWrites=true&w=majority",
+      "mongodb+srv://username:password-cluster0.shipz.mongodb.net/?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        dbName: "jobfinder",
+        dbName: "dbname",
       }
     );
     console.log("MongoDB connected");
